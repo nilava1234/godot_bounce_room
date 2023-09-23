@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvvaqukrvaaq4"]
+
+[ext_resource type="Script" path="res://camera.gd" id="1_fx73s"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_fx73s")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+fov = 94.2029

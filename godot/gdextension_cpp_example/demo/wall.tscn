@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://grcc1qgsxs7m"]
+
+[ext_resource type="Texture2D" uid="uid://lpfetf5m1b0d" path="res://icon.svg" id="1_r2l8l"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6g5yy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_11wj7"]
+albedo_texture = ExtResource("1_r2l8l")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ixpaa"]
+
+[node name="wall" type="wall"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1001, 0, 0, 0, 1001, 0, 0, 0, 1, 0, 0, 0)
+gi_lightmap_scale = 3
+mesh = SubResource("BoxMesh_6g5yy")
+surface_material_override/0 = SubResource("StandardMaterial3D_11wj7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1001, 0, 0, 0, 1001, 0, 0, 0, 1.5, 0, 0, 0)
+shape = SubResource("BoxShape3D_ixpaa")

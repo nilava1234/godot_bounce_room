@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://xnvbwpvflqy1"]
+
+[ext_resource type="PackedScene" uid="uid://grcc1qgsxs7m" path="res://wall.tscn" id="1_bvl2j"]
+
+[node name="Room" type="Node3D"]
+
+[node name="wall" parent="." instance=ExtResource("1_bvl2j")]
+normal_z = -1.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -500)
+
+[node name="wall2" parent="." instance=ExtResource("1_bvl2j")]
+normal_z = -1.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 500)
+
+[node name="wall3" parent="." instance=ExtResource("1_bvl2j")]
+normal_y = -1.0
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -500, 0)
+
+[node name="wall4" parent="." instance=ExtResource("1_bvl2j")]
+normal_y = -1.0
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 500, 0)
+
+[node name="wall5" parent="." instance=ExtResource("1_bvl2j")]
+normal_x = -1.0
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 500, 0, 0)
+
+[node name="wall6" parent="." instance=ExtResource("1_bvl2j")]
+normal_x = -1.0
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -500, 0, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+omni_range = 800.0
+omni_attenuation = 0.19484
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.00186749, -0.999998, 0, 0.999998, 0.00186749, 0, 431.869, 0)
+light_color = Color(0.4, 1, 0.945098, 1)

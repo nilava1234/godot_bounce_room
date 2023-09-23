@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c0sph4qac1vka"]
+
+[ext_resource type="PackedScene" uid="uid://xnvbwpvflqy1" path="res://room.tscn" id="1_t2kel"]
+[ext_resource type="PackedScene" uid="uid://byuaub0qt4tm1" path="res://ball.tscn" id="2_xql6y"]
+[ext_resource type="PackedScene" uid="uid://bvvaqukrvaaq4" path="res://camera.tscn" id="3_eplnm"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Room" parent="." instance=ExtResource("1_t2kel")]
+
+[node name="ball" parent="." instance=ExtResource("2_xql6y")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -632.271, -843.027, -421.514)
+
+[node name="ball2" parent="." instance=ExtResource("2_xql6y")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -772.242, -308.897, -772.242)
+
+[node name="ball3" parent="." instance=ExtResource("2_xql6y")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -222.584, -667.752, -890.337)
+
+[node name="Camera3D" parent="." instance=ExtResource("3_eplnm")]
+transform = Transform3D(500, 0, 0, 0, -500, 7.54979e-05, 0, -7.54979e-05, -500, 0, 0, 113.264)
