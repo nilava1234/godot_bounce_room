@@ -13,7 +13,7 @@ Required:
 2)scons
 
 Steps:
-1) in /godot rune the command
+1) in /godot run the command
 $: scons
 this should list all available executable files it could make. Choose the right one for you.
 2) run the command
